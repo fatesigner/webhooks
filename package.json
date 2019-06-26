@@ -1,0 +1,50 @@
+{
+  "name": "webhooks",
+  "version": "0.0.1",
+  "description": "webhooks server.",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "webhooks",
+    "typescript"
+  ],
+  "author": {
+    "name": "Jeremy Tang",
+    "email": "fatesigner@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatesigner/webhooks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fatesigner/webhooks/issues"
+  },
+  "homepage": "https://github.com/fatesigner/webhooks#readme",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "start": "ts-node src/main",
+    "prestart:prod": "npm run build",
+    "start:prod": "node dist/main.js"
+  },
+  "dependencies": {
+    "@nestjs/common": "6.3.2",
+    "@nestjs/core": "6.3.2",
+    "@nestjs/platform-express": "6.3.2",
+    "await-to-js": "2.1.1",
+    "class-transformer": "0.2.3",
+    "body-parser": "1.19.0",
+    "body-parser-xml": "1.1.0",
+    "crypto": "1.0.1",
+    "reflect-metadata": "0.1.13",
+    "rxjs": "6.5.2",
+    "shelljs": "0.8.3",
+    "typescript": "3.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "10.14.10",
+    "supertest": "4.0.2",
+    "ts-jest": "24.0.2",
+    "ts-node": "8.3.0",
+    "tslint": "5.18.0"
+  }
+}
